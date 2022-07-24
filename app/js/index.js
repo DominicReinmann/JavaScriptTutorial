@@ -11,7 +11,6 @@ var selectColor = null;
 
 
 
-
 // Arrays 
 
 // Arrays ar started with square braces []
@@ -34,6 +33,8 @@ list.shift() // removes the first item in the array
 list.unshift() // adds an item to the front of the array
 list.indexOf() // returns the index of the given value 
 
+
+
 // Objects
 
 // Objects use curly brackets instead of square brackets
@@ -52,3 +53,39 @@ person.name
 // If you want to chance a given property you can use the square brackets and assign a new value 
 person["name"] = "Tim"
 
+var isTimFittToday = new Object()
+isTimFittToday.ShouldHeGoToSleep = "Yes" 
+
+
+
+
+// Operators
+
+// Arithmetic Operators
+y = y + x  // Addition
+y = y - x  // Subtraction
+y = y * x  // Multiplication 
+y = y ** x // Exponential 
+y = y / x  // Division
+y = y % x  // Modulo, the remainder of a Division
+y = y ++  // Increment
+y = y --  // Decrement
+
+
+//Assignment Operators
+y = x   // Assign
+y += x  // Add and Assign  
+y -= x  // Subtract and Assign 
+y *= x  // Multiply and Assign 
+y **= x // Exponent Assign 
+y /= x  // Divide and Assign 
+y %= x  // Modulo and Assign
+
+// Comparison Operator 
+
+y == x // Equal to 
+y > x  // Greater than 
+y < x  // Smaller than 
+y != x // Not Equal 
+y && x // and 
+y || x // or   
