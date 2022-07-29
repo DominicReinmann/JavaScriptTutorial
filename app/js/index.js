@@ -128,3 +128,29 @@ function add(val1, val2) {
 console.log(add(45, 2)); // returns 47
 
 // Selectors
+// You use selector to accsess the DOM and its various elements
+var firstItem = document.getElementById("item-1"); // gets the first entry with that id, it returns one element as you only can have one id with the same name
+
+var myList = document.getElementsByClassName("my-ul"); // gets all the elements with the matching class name
+
+var paragraphs = document.getElementsByTagName("p"); // gets all the elements with the matching tag name
+
+// Jquery selector
+var images = document.querySelectorAll("img"); // gets all the img elements
+
+// manipulation of css etc
+firstItem.style.color = "red"; // changes the color of firstItem to red
+myList[1].style.display = "none"; // hides the second ul list on the page
+
+// we can change all the p tags to the color green with a for loop
+for (var i = 0; i < paragraphs.lenght; i++) {
+  paragraphs[i].style.color = "green";
+}
+
+// Events
+// events happen in html but we can listen to them with js and react to it
+var submitBtn = document.getElementById("submit"); // gets the element with the submit is and assigns it to submitBtn
+
+submitBtn.addEventListener("click", function (event) {
+  console.log("Hey I have ben clicked)");
+}); // if the button is clicket the console.log event triggers and the message gets printed
